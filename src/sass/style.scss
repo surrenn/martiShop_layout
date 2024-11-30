@@ -1,29 +1,26 @@
 //google font==========================================================================
 
-// @import url("link");
-
-//local font =================================================================
-
-@import "font/font";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 //ICON font ============================================================================
 
-@import "font/iconfont";
+// @import "font/iconfont";
 
 // SETTINGS ====================================================================
 
 // font =================================================================================
-$fontFamily: "", sans-serif;
+$fontFamily: "Ubuntu", sans-serif;
 
 // colors ===================================================================
-$mainColor: #000;
+$mainColor: #171719;
+$secondColor: #5d6bb8;
 
 // font settings ==============================================================
-$fontSize: 16px;
-$fontWeight: 500;
+$fontSize: 17px;
+$fontWeight: 400;
 
 // sizes ======================================================================
-$containerWidth: 1280px;
+$containerWidth: 1220px;
 
 // 0 - without paddings
 $containerPaddings: 15px;
@@ -49,3 +46,4 @@ $containerPaddings: 15px;
 
 // reset styles=============================================================
 @import "base/null";
+@import "blocks/header-top";
