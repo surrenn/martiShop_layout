@@ -1,5 +1,6 @@
 .header {
   padding: 20px 15px 0 15px;
+  position: relative;
   &__top {
   }
 
@@ -99,6 +100,34 @@
     }
   }
 }
+
+.mob-menu {
+  padding: 50px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: #adb0c1;
+  transition: all 0.5s ease 0s;
+
+  &__nav {
+  }
+
+  &__mob-list {
+  }
+
+  &_active {
+    left: 0;
+  }
+}
+.mob-list {
+
+  &__item {
+    padding: 5px 0;
+  }
+}
+
 
 @media (max-width: 1230px) {
   .menu-list {
