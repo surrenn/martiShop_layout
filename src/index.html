@@ -10,7 +10,8 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__top _container header-top">
+        <div class="header__top header-top">
+         <div class="header-top__container _container">
           <nav class="header-top__nav">
             <ul class="header-top__menu-list menu-list">
               <li class="menu-list__item"><a href="">Вопрос-ответ</a></li>
@@ -44,9 +45,8 @@
             <span></span>
             <span></span>
           </div>
+         </div>
         </div>
-
-        <div class="header__bottom _container"></div>
 
         <div class="mob-menu">
           <nav class="mob-menu__nav">
@@ -60,6 +60,42 @@
               <li class="menu-list__item mob-list__item"><a href="">Автосервис</a></li>
             </ul>
           </nav>
+        </div>
+        
+        
+        <div class="header__bottom header-bottom">
+         <div class="header-bottom__container _container">
+          <a href="" class="header-bottom__logo logo">
+            <img src="./icons/logo.svg" alt="logo">
+            <span>Marti Shop</span>
+          </a>
+
+          <div class="header-bottom__catalog catalog">
+            <div class="catalog__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="catalog__caption">Каталог</div>
+          </div>
+
+          <div class="header-bottom__search search">
+            <form action="" class="search__form">
+              <input type="text" class="search__input" placeholder="Поиск по размеру и артикулу">
+              <button type="submit">
+                <img src="./icons/header/search.svg" alt="search">
+              </button>
+            </form>
+          </div>
+
+          <div class="header-bottom__actions actions">
+            <a href="" class="actions__btn act-btn">
+              <img src="./icons/header/person.svg" alt="person" class="act-btn__img">
+              <div class="act-btn__name">Профиль</div>
+            </a> 
+          </div>
+         </div>
+
         </div>
       </header>
 

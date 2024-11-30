@@ -1,7 +1,7 @@
 .header {
-  padding: 20px 15px 0 15px;
   position: relative;
   &__top {
+    padding: 20px 15px 0 15px;
   }
 
   &__hamburger {
@@ -9,12 +9,17 @@
 }
 
 .header-top {
-  display: flex;
-  align-items: center;
-  background: #c7cbdf;
-  border-radius: 8px;
-  padding: 16px 30px;
-  column-gap: 10px;
+ 
+  &__container {
+    display: flex;
+    align-items: center;
+    background: #c7cbdf;
+    border-radius: 8px;
+    padding: 16px 30px;
+    column-gap: 10px;
+    box-sizing: border-box;
+  }
+
   &__nav {
     flex: 1 1 auto;
   }
