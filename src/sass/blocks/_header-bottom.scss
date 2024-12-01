@@ -9,6 +9,7 @@
 
     &__container {
         display: flex;
+        align-items: center;
         column-gap: 30px;
     }
 
@@ -26,6 +27,7 @@
 }
 
 .logo {
+    flex: 0 0 212px;
     display: flex;
     align-items: center;
     column-gap: 8px;
@@ -79,25 +81,100 @@
 
 
 .search {
-
+    flex: 0 1 435px;
     &__form {
+        width: 100%;
+        display: flex;
     }
 
     &__input {
+        background-color: $whiteColor;
+        border-bottom: 1px solid #6c6e7b;
+        border-left: 1px solid #6c6e7b;
+        border-top: 1px solid #6c6e7b;
+        border-radius: 8px 0 0 8px;
+        padding: 16px;
+        line-height: 130%;
+        color: #6c6e7b;
+        flex: 0 1 100%;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        background-color: $secondColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 8px 8px 0;
+        padding: 10px;
+        flex: 0 0 56px;
+        img {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
 
 .actions {
-
+    display: flex;
+    column-gap: 8px;
     &__btn {
     }
 }
 
 .act-btn {
-
+    // flex: 1 1 160px;
+    position: relative;
+    border: 2px solid #6c6e7b;
+    border-radius: 8px;
+    padding: 16px 28px;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
     &__img {
+        width: 24px;
+        height: 24px;
     }
 
     &__name {
+        font-weight: 500;
+        line-height: 130%;
+        color: $mainColor;
+    }
+
+    &__circle {
+        position: absolute;
+        background-color: $secondColor;
+        font-size: 12px;
+        line-height: 130%;
+        text-align: center;
+        color: $whiteColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        top: 4px;
+        right: 4px;
     }
 }
+
+// @media (max-width: 1130px) {
+//     .header-bottom {
+//         &__container {
+//             column-gap: 15px;
+//             flex-wrap: wrap;
+//         }
+//     }
+
+//     .catalog {
+//         order: 4;
+//     }
+
+//     .search {
+//         flex: 1 1 100%;
+//     }
+// }
