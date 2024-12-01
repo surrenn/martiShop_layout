@@ -15,9 +15,11 @@ $fontFamily: "Ubuntu", sans-serif;
 $mainColor: #171719;
 $secondColor: #5d6bb8;
 $whiteColor: #f7f9ff;
+$hoverSecondColor: #5b67af;
 
 // font settings ==============================================================
 $fontSize: 17px;
+$fontSizeForMob: 15px;
 $fontWeight: 400;
 
 // sizes ======================================================================
@@ -44,6 +46,7 @@ $containerPaddings: 15px;
   margin: 0 auto;
   box-sizing: content-box;
 }
+
 
 // reset styles=============================================================
 @import "base/null";

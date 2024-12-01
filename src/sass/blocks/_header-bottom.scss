@@ -53,10 +53,15 @@
     align-items: center;
     column-gap: 10px;
     cursor: pointer;
+
+    &:hover {
+        background-color:  $hoverSecondColor
+    }
+
     &__caption {
         font-weight: 500;
         line-height: 130%;
-        color: #f7f9ff;
+        color: $whiteColor;
 
     }
 
@@ -69,7 +74,7 @@
 
         span {
         display: block;
-        background-color: #fff;
+        background-color: $whiteColor;
         height: 2px;
         width: 100%;
         border-radius: 5px;
@@ -114,6 +119,10 @@
             width: 24px;
             height: 24px;
         }
+
+        &:hover {
+            background-color:  $hoverSecondColor
+        }
     }
 }
 
@@ -125,24 +134,26 @@
 }
 
 .act-btn {
-    // flex: 1 1 160px;
     position: relative;
     border: 2px solid #6c6e7b;
     border-radius: 8px;
-    padding: 16px 28px;
+    padding: 14px 28px;
     display: flex;
     column-gap: 8px;
     align-items: center;
+    font-weight: 500;
+    line-height: 130%;
+    color: $mainColor;
+
+    &:hover {
+        color: $secondColor;
+    }
+
     &__img {
         width: 24px;
         height: 24px;
     }
 
-    &__name {
-        font-weight: 500;
-        line-height: 130%;
-        color: $mainColor;
-    }
 
     &__circle {
         position: absolute;
@@ -162,19 +173,56 @@
     }
 }
 
-// @media (max-width: 1130px) {
-//     .header-bottom {
-//         &__container {
-//             column-gap: 15px;
-//             flex-wrap: wrap;
-//         }
-//     }
+@media (max-width: 1130px) {
+    .header-bottom {
+        &__container {
+            align-items: flex-start;
+            row-gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
 
-//     .catalog {
-//         order: 4;
-//     }
+    .catalog {
+        flex: 1 1 auto;
+        justify-content: center;
+        order: 4;
+    }
 
-//     .search {
-//         flex: 1 1 100%;
-//     }
-// }
+    .actions {
+        flex: 1 1 100%;
+
+        &__btn {
+            flex: 1 1 50%;
+            justify-content: center;
+        }
+    }
+
+    .search {
+        flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-bottom {
+        margin-top: 10px;
+        &__container {
+            justify-content: center;
+        }
+    }
+
+    .actions {
+        display: block;
+        &__btn {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .search {
+        flex: 1 1 100%;
+        &__input {
+            font-size: 14px;
+        }
+    }
+}

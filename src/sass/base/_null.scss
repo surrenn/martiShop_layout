@@ -34,6 +34,11 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
+  @media (max-width: 425px) {
+    font-size: $fontSizeForMob;
+  }
 }
 input,
 button,
